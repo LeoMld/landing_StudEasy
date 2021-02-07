@@ -184,7 +184,7 @@ class Landing extends React.Component {
                             4 that includes the most important components and
                             features.
                           </p>
-                          <div>
+                          <div >
                             <Badge color="success" pill className="mr-1">
                               business
                             </Badge>
@@ -279,7 +279,7 @@ class Landing extends React.Component {
                               <i className="ni ni-settings-gear-65" />
                             </Badge>
                           </div>
-                          <div>
+                          <div >
                             <h6 className="mb-0">
                               Carefully crafted components
                             </h6>
@@ -611,7 +611,7 @@ class Landing extends React.Component {
                         <span className="d-block mb-1">Alexander Smith</span>
                         <small className="h6 text-muted">UI/UX Designer</small>
                       </h5>
-                      <div className="mt-3">
+                      <div id="testAnchor" className="mt-3">
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="info"

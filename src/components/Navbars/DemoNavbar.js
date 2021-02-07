@@ -16,9 +16,10 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
+
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
+import { HashLink as Link } from 'react-router-hash-link';
 // reactstrap components
 import {
   Button,
@@ -195,6 +196,9 @@ class DemoNavbar extends React.Component {
                   </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                  <NavItem>
+                    <Link smooth to="/#testAnchor">TEST ANCHOR</Link>
+                  </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
