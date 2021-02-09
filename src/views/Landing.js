@@ -16,6 +16,10 @@
 
 */
 import React from "react";
+import back1 from "assets/img/theme/promo-1.png"
+import logo from "assets/img/brand/logoS.png"
+
+
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
@@ -69,18 +73,24 @@ class Landing extends React.Component {
                 <span />
                 <span />
               </div>
-              <Container className="py-lg-md d-flex">
+              <Container className="py-lg-md d-flex mt-md">
                 <div className="col px-0">
                   <Row>
-                    <Col lg="6">
+                    <Col>
+                      <img
+                          alt="logo"
+                          className="img-fluid floating"
+                          src={logo}
+                      />
+                    </Col>
+                    <Col >
                       <h1 className="display-3 text-white">
-                        Stud'Easy{" "}
+                        {" "}
                         <span>LA plateforme étudiante</span>
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                        Avec Stud'Easy, nous avons trois objectifs : <strong>dynamiser</strong> votre vie étudiante, révolutionner vos finances et être un
+                        intermédiaire privilégié auprès des autres acteurs de notre plateforme (votre école, entreprises, particuliers ...)
                       </p>
                       <div className="btn-wrapper">
                         <Button
@@ -96,6 +106,7 @@ class Landing extends React.Component {
 
                       </div>
                     </Col>
+
                   </Row>
                 </div>
               </Container>
@@ -122,46 +133,11 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center">
                 <Col lg="12">
-                  <Row className="row-grid">
-                    <Col lg="4">
+                  <Row className="row-grid mt-lg">
+
+                    <Col>
                       <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
-                          </div>
-                          <h6 className="text-primary text-uppercase">
-                            Download Argon
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              design
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              system
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              creative
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
+                        {/*<CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
                             <i className="ni ni-istanbul" />
                           </div>
@@ -192,45 +168,16 @@ class Landing extends React.Component {
                           >
                             Learn more
                           </Button>
-                        </CardBody>
+                        </CardBody>*/}
+
+                          <iframe height="600" src="https://www.youtube.com/embed/43fqzaSH0CQ" frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen/>
+
+
                       </Card>
                     </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
-                          </div>
-                          <h6 className="text-warning text-uppercase">
-                            Prepare Launch
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              marketing
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              product
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              launch
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
+
                   </Row>
                 </Col>
               </Row>
@@ -243,7 +190,7 @@ class Landing extends React.Component {
                   <img
                     alt="..."
                     className="img-fluid floating"
-                    src={require("assets/img/theme/promo-1.png")}
+                    src={back1}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">

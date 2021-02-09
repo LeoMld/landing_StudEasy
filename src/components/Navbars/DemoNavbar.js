@@ -176,7 +176,7 @@ class DemoNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                   <NavItem>
-                    <Link className="nav-link" smooth to="/#testAnchor">A propos de nous</Link>
+                    <Link className="nav-link" smooth to="/#testAnchor" >A propos de nous</Link>
                   </NavItem>
                   <NavItem>
                     <Link className="nav-link" smooth to="/#testAnchor">Contact</Link>
