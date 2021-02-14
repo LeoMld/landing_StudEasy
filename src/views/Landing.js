@@ -44,6 +44,12 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 
+//images component
+import findWork from "../assets/img/persons/findWork.png"
+import monetize from  "../assets/img/persons/monetize.png"
+import plans from  "../assets/img/persons/plans.png"
+import menu from  "../assets/img/persons/menu.png"
+
 // index page sections
 import Download from "./IndexSections/Download.js";
 
@@ -76,11 +82,12 @@ class Landing extends React.Component {
               <Container className="py-lg-md d-flex mt-md">
                 <div className="col px-0">
                   <Row>
-                    <Col>
+                    <Col lg="7">
                       <img
+                          style={{height : "auto"}}
                           alt="logo"
                           className="img-fluid floating"
-                          src={logo}
+                          src={menu}
                       />
                     </Col>
                     <Col >
@@ -175,6 +182,82 @@ class Landing extends React.Component {
                                   allowFullScreen/>
 
 
+                      </Card>
+                    </Col>
+
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+          <section className="section section-lg ">
+            <Container>
+              <div className="mb-md-5">
+                <h1 className="display-3">
+                  Stud'easy en détail
+                </h1>
+              </div>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <Row className="row-grid">
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="ni ni-check-bold" />
+                          </div>
+                          <h6 className="text-primary text-uppercase">
+                            Job étudiant
+                          </h6>
+                          <div>
+                            <p className="description mt-3">
+                              Trouve facilement du travail en retrouvant différentes offres proposées par des entreprises</p>
+                            <div>
+                              <img className="img-fluid " style={{height : 250}} src={findWork} alt="trouve du travail"/>
+                            </div>
+                          </div>
+
+
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                            <i className="ni ni-money-coins" />
+                          </div>
+                          <h6 className="text-success text-uppercase">
+                            Monétise ton temps
+                          </h6>
+                          <p className="description mt-3">
+                            Monétise ton temps en proposant tes compétences à d'autres utilisateurs et en les échangeant avec d'autres étudiants
+                          </p>
+                          <div className="mb-sm-4">
+                            <img className="img-fluid " style={{height : 250}} src={plans} alt="trouve du travail"/>
+
+                          </div>
+
+
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                            <i className="ni ni-satisfied" />
+                          </div>
+                          <h6 className="text-warning text-uppercase">
+                            Bon plans
+                          </h6>
+                          <p className="description mt-3">
+                            Profite de bon plans et de réductions chez nos différents partenaires
+                          </p>
+                          <img className="img-fluid " style={{height : 250}} src={monetize} alt="trouve du travail"/>
+
+
+                        </CardBody>
                       </Card>
                     </Col>
 
