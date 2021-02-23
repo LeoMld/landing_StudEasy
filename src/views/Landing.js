@@ -144,38 +144,6 @@ class Landing extends React.Component {
 
                     <Col>
                       <Card className="card-lift--hover shadow border-0">
-                        {/*<CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
-                          </div>
-                          <h6 className="text-success text-uppercase">
-                            Build Something
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div >
-                            <Badge color="success" pill className="mr-1">
-                              business
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              vision
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              success
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>*/}
 
                           <iframe height="600" src="https://www.youtube.com/embed/43fqzaSH0CQ" frameBorder="0"
                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -197,76 +165,138 @@ class Landing extends React.Component {
                   Stud'easy en détail
                 </h1>
               </div>
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <Row className="row-grid">
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
-                          </div>
-                          <h6 className="text-primary text-uppercase">
-                            Job étudiant
-                          </h6>
-                          <div>
-                            <p className="description mt-3">
-                              Trouve facilement du travail en retrouvant différentes offres proposées par des entreprises</p>
-                            <div>
-                              <img className="img-fluid " style={{height : 250}} src={findWork} alt="trouve du travail"/>
+              <div>
+                <Row className="justify-content-center">
+                  <Col lg="12">
+                    <Row className="row-grid">
+                      <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
+                          <CardBody className="py-5">
+                            <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                              <i className="ni ni-check-bold" />
                             </div>
-                          </div>
+                            <h6 className="text-primary text-uppercase">
+                              Job étudiant
+                            </h6>
+                            <div>
+                              <p className="description mt-3">
+                                Trouve facilement du travail en retrouvant différentes offres proposées par des entreprises</p>
+                              <div>
+                                <img className="img-fluid " style={{height : 250}} src={findWork} alt="trouve du travail"/>
+                              </div>
+                            </div>
 
 
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-money-coins" />
-                          </div>
-                          <h6 className="text-success text-uppercase">
-                            Monétise ton temps
-                          </h6>
-                          <p className="description mt-3">
-                            Monétise ton temps en proposant tes compétences à d'autres utilisateurs et en les échangeant avec d'autres étudiants
-                          </p>
-                          <div className="mb-sm-4">
-                            <img className="img-fluid " style={{height : 250}} src={plans} alt="trouve du travail"/>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                      <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
+                          <CardBody className="py-5">
+                            <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                              <i className="ni ni-money-coins" />
+                            </div>
+                            <h6 className="text-success text-uppercase">
+                              Monétise ton temps
+                            </h6>
+                            <p className="description mt-3">
+                              Monétise ton temps en proposant tes compétences à d'autres utilisateurs ou en les échangeants avec d'autres étudiants
+                            </p>
+                            <div className="mb-sm-4">
+                              <img className="img-fluid " style={{height : 250}} src={plans} alt="trouve du travail"/>
 
-                          </div>
-
-
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-satisfied" />
-                          </div>
-                          <h6 className="text-warning text-uppercase">
-                            Bon plans
-                          </h6>
-                          <p className="description mt-3">
-                            Profite de bon plans et de réductions chez nos différents partenaires
-                          </p>
-                          <img className="img-fluid " style={{height : 250}} src={monetize} alt="trouve du travail"/>
+                            </div>
 
 
-                        </CardBody>
-                      </Card>
-                    </Col>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                      <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0" style={{height : 550}}>
+                          <CardBody className="py-5">
+                            <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                              <i className="ni ni-satisfied" />
+                            </div>
+                            <h6 className="text-warning text-uppercase">
+                              Bon plans
+                            </h6>
+                            <p className="description mt-3">
+                              Profite de bon plans et de réductions chez nos différents partenaires
+                            </p>
+                            <img className="img-fluid " style={{height : 250}} src={monetize} alt="trouve du travail"/>
 
-                  </Row>
-                </Col>
-              </Row>
+
+                          </CardBody>
+                        </Card>
+                      </Col>
+
+                    </Row>
+                  </Col>
+                </Row>
+              </div>
+              <div className="mt-md">
+                <Row className="justify-content-center">
+                  <Col lg="12">
+                    <Row className="row-grid">
+                      <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0" >
+                          <CardBody className="py-5">
+                            <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                              <i className="ni ni-briefcase-24" />
+                            </div>
+                            <h6 className="text-primary text-uppercase">
+                              Auto-entrepreneur ?
+                            </h6>
+                            <div>
+                              <p className="description mt-3">
+                                Crée et fait gérer ton business, on t'aide et on t'accompagne</p>
+                            </div>
+
+                          </CardBody>
+                        </Card>
+                      </Col>
+                      <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0" >
+                          <CardBody className="py-5">
+                            <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                              <i className="ni ni-book-bookmark" />
+                            </div>
+                            <h6 className="text-success text-uppercase">
+                              Besoin d'aide ?
+                            </h6>
+                            <p className="description mt-3">
+                              Notre équipe et la communauté t’aide dans tes démarches : administratif, logement …
+                            </p>
+
+                          </CardBody>
+                        </Card>
+                      </Col>
+                      <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0" >
+                          <CardBody className="py-5">
+                            <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                              <i className="ni ni-satisfied" />
+                            </div>
+                            <h6 className="text-warning text-uppercase">
+                              Association
+                            </h6>
+                            <p className="description mt-3">
+                              Des services sur mesure pour vous, votre association
+                            </p>
+
+
+                          </CardBody>
+                        </Card>
+                      </Col>
+
+                    </Row>
+                  </Col>
+                </Row>
+
+              </div>
             </Container>
           </section>
-          <section className="section section-lg">
+          <section className="section bg-secondary section-lg">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -279,60 +309,95 @@ class Landing extends React.Component {
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                      <i className="ni ni-settings-gear-65" />
+                      <i className="fa fa-facebook-square" />
                     </div>
-                    <h3>Awesome features</h3>
+                    <h3>Participez déjà sur Facebook</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      Soutenez nous en likant notre page facebook (lien : https://www.facebook.com/studeasy34)
+                      et en intégrant le groupe privé des membres de Stud’Easy avant le lancement de la plateforme. <br/>
+                      <br/>
+                      Vous pourrez :
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex ">
                           <div>
                             <Badge
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-settings-gear-65" />
+                              <i className="ni ni-world-2" />
                             </Badge>
                           </div>
                           <div >
                             <h6 className="mb-0">
-                              Carefully crafted components
+                              Nous aider à faire grandir la communauté
                             </h6>
                           </div>
                         </div>
                       </li>
                       <li className="py-2">
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex ">
                           <div>
                             <Badge
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-html5" />
+                              <i className="ni ni-bulb-61" />
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
+                            <h6 className="mb-0">Partager vos idées et participer </h6>
                           </div>
                         </div>
                       </li>
                       <li className="py-2">
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex ">
                           <div>
                             <Badge
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-satisfied" />
+                              <i className="ni ni-chat-round" />
                             </Badge>
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Super friendly support team
+                              Commencer à communiquer vos compétences et besoins
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex ">
+                          <div>
+                            <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                            >
+                              <i className="ni ni-briefcase-24" />
+                            </Badge>
+                          </div>
+                          <div >
+                            <h6 className="mb-0">
+                              Créer et gérer votre business étudiant, notre équipe vous accompagne !
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex ">
+                          <div>
+                            <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                            >
+                              <i className="ni ni-like-2" />
+                            </Badge>
+                          </div>
+                          <div >
+                            <h6 className="mb-0">
+                              Bénéficier d’aides réservées aux membres : logement, administratif, bons plans …
                             </h6>
                           </div>
                         </div>
@@ -341,6 +406,11 @@ class Landing extends React.Component {
                   </div>
                 </Col>
               </Row>
+              <div className="d-flex align-content-center mt-md" >
+                <Button href="https://www.facebook.com/studeasy34" block color="info" size="lg" type="button">
+                  Suivez nous sur Facebook !
+                </Button>
+              </div>
             </Container>
           </section>
           <section className="section bg-secondary">
