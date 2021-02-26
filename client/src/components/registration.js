@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useInput } from './hooks/input-hook';
 
 import {
     FormGroup,
@@ -14,20 +15,36 @@ import Axios from "axios";
 
 function Registration() {
 
+    // UI
     const [emailFocused, setEmailFocused] = useState(false);
     const [nameFocused, setNameFocused] = useState(false);
     const [firstnameFocused, setFirstnameFocused] = useState(false);
 
+    // Form text fields
+    const { value:email, bind:bindEmail, reset:resetEmail } = useInput('');
+    const { value:lastName, bind:bindLastName, reset:resetLastName } = useInput('');
+    const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useInput('');
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        Axios.get("/api/test")
+
+        const registrationInfo = {
+            email,
+            lastName,
+            firstName
+        }
+
+        Axios.post('/api/registration', registrationInfo)
             .then(res => {
                 console.log(res.data.message);
-            });
+            })
+        resetEmail()
+        resetFirstName()
+        resetLastName()
     }
 
     return (
-        <Form>
+        <Form onSubmit={handleSubmit}>
             <FormGroup
                 className={classnames("mt-5",{
                     focused: emailFocused
@@ -42,6 +59,7 @@ function Registration() {
                     <Input
                         placeholder="Adresse Mail"
                         type="email"
+                        {...bindEmail}
                         onFocus={e => setEmailFocused(true)}
                         onBlur={e => setEmailFocused(false)}
                     />
@@ -61,6 +79,7 @@ function Registration() {
                     <Input
                         placeholder="Nom"
                         type="text"
+                        {...bindLastName}
                         onFocus={e => setNameFocused(true)}
                         onBlur={e => setNameFocused(false)}
                     />
@@ -80,6 +99,7 @@ function Registration() {
                     <Input
                         placeholder="Prénom"
                         type="text"
+                        {...bindFirstName}
                         onFocus={e => setFirstnameFocused(true)}
                         onBlur={e => setFirstnameFocused(false)}
                     />
@@ -91,8 +111,7 @@ function Registration() {
                     className="btn-round"
                     color="default"
                     size="lg"
-                    type="button"
-                    onClick={handleSubmit}
+                    type="submit"
                 >
                     Pré-Inscription
                 </Button>
